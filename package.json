@@ -1,0 +1,27 @@
+{
+  "name": "surfinfo",
+  "version": "1.0.0",
+  "description": "website of a surf spot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/javieralas05/lasflores.git"
+  },
+  "keywords": [
+    "npm",
+    "javascript",
+    "html",
+    "css",
+    "jquery",
+    "sass"
+  ],
+  "author": "Javier Alas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javieralas05/lasflores/issues"
+  },
+  "homepage": "https://github.com/javieralas05/lasflores#readme"
+}
