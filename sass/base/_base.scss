@@ -1,0 +1,36 @@
+// COLOR VARIABLES
+
+$color-black:#000000;
+$color-white: #FFFFFF;
+$color-blue: #497C9F;
+$color-orange: #F4A218;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+
+// RESPONSIVE BREAKPOINTS
+//$bp-largest: 75em;   // 1200px
+//$bp-large: 62.5em;   // 1000px
+//$bp-medium: 50em;    // 800px;
+//$bp-small: 37.5em;    // 600px;
+
+// GENERALS
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Basis Grotesque Pro', sans-serif;
+    box-sizing: border-box;
+}

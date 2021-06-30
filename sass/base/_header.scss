@@ -1,0 +1,84 @@
+//Barra de navegacion version escritorio
+
+.menu-bar-pc{
+    width: 100%;
+    min-height: 6.8rem;
+    border-bottom: 1px solid rgba($color-black, 0.15);
+    padding: 0 3.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.logo{
+    display: inline-block;
+    width: 5rem;
+    img{
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.menu-principal a,
+.top-redes a{
+    display: inline-block;
+    padding: 0 1rem;
+    color: $color-white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    line-height: 1.5;
+    transition: all .3 ease;
+    &:last-child,
+    &:last-child{
+        padding-right: 0;
+    }
+
+}
+
+.menu-principal a:hover,
+.top-redes a:hover{
+    color: $color-orange;
+}
+
+
+.top-redes a i{
+    font-size: 2rem;
+}
+
+.fixed-header{
+    width: 100%;
+    min-height: 6.8rem;
+    border-bottom: 1px solid rgba($color-black, 0.15);
+    padding: 0 3.6rem;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all 0.4s ease;
+    margin-top: -6.8rem;
+    .menu-principal a,
+    .top-redes a{
+    color: $color-black;
+    }
+}
+
+.menu-principal a:hover,
+.top-redes a:hover{
+color: $color-orange;
+}
+
+
+// barra de navegación para dispositivos móvil
+
+.menu-mobile{
+    display: none;
+}

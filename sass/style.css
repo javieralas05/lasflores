@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Basis Grotesque Pro', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu-bar-pc {
+  width: 100%;
+  min-height: 6.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0 3.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  display: inline-block;
+  width: 5rem;
+}
+
+.logo img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.menu-principal a,
+.top-redes a {
+  display: inline-block;
+  padding: 0 1rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  line-height: 1.5;
+  -webkit-transition: all .3 ease;
+  transition: all .3 ease;
+}
+
+.menu-principal a:last-child, .menu-principal a:last-child,
+.top-redes a:last-child,
+.top-redes a:last-child {
+  padding-right: 0;
+}
+
+.menu-principal a:hover,
+.top-redes a:hover {
+  color: #F4A218;
+}
+
+.top-redes a i {
+  font-size: 2rem;
+}
+
+.fixed-header {
+  width: 100%;
+  min-height: 6.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0 3.6rem;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: -6.8rem;
+}
+
+.fixed-header .menu-principal a,
+.fixed-header .top-redes a {
+  color: #000000;
+}
+
+.menu-principal a:hover,
+.top-redes a:hover {
+  color: #F4A218;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  margin-top: -6.8rem;
+}
+
+.banner-principal {
+  width: 100%;
+  position: relative;
+}
+
+/*
+.wrapper{
+    height: 100vh;
+}
+
+.content-area{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.content-text{
+    width: 520px;
+    margin: 140px auto;
+    text-align: center;
+}
+*/
+/*# sourceMappingURL=style.css.map */
