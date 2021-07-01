@@ -621,9 +621,10 @@ body {
 
 .main .contacto .contenedor-formulario .foto {
   width: 50%;
-  background-image: url("/img/1m.jpg");
+  background-image: url("/img/1f.jpg");
   background-size: cover;
   border-radius: 3px;
+  background-position: right;
 }
 
 /* ------ PIE DE PÁGINA ------ */
@@ -663,6 +664,149 @@ footer .footer-redes a:hover {
 
 .footer-redes a i {
   font-size: 2rem;
+}
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 1040px) {
+  /*Sección información extra*/
+  .main .info-extra .contenedor .info {
+    display: none;
+  }
+  .main .info-extra .contenedor .foto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /*Encabezado*/
+  .menu-bar-pc {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    width: 100%;
+    padding: 5px 18px;
+    background: #fff;
+    color: #444444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .menu-mobile .barra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-mobile .barra .logo {
+    width: 40px;
+  }
+  .menu-mobile .barra a i {
+    font-size: 1.4rem;
+    color: #444444;
+  }
+  .menu-mobile .menu-principal {
+    width: 80%;
+    display: block;
+    position: fixed;
+    top: 56px;
+    left: -100%;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    border-right: 1px solid rgba(204, 204, 204, 0.5);
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    text-align: center;
+  }
+  .menu-mobile .menu-principal a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  }
+  .menu-mobile .menu-principal a:hover {
+    background: #f7f7f7;
+  }
+  .fixed-header {
+    display: none;
+  }
+  /*Main*/
+  .main {
+    margin-top: 0;
+  }
+  /*Acerca de*/
+  .main .acerca-de .contenedor .titulo-seccion, .main .acerca-de .contenedor .texto-acerca-de {
+    width: 100%;
+    text-align: center;
+  }
+  .main .acerca-de .contenedor .titulo-seccion .main .info-extra .contenedor .foto, .main .acerca-de .contenedor .texto-acerca-de .main .info-extra .contenedor .foto {
+    width: 80%;
+  }
+  /*Contacto*/
+  .main .contacto .contenedor-formulario .formulario {
+    width: 100%;
+    text-align: center;
+  }
+  .main .contacto .contenedor-formulario .foto {
+    display: none;
+  }
+  .main .contacto .contenedor-formulario .formulario form input[type="text"], .main .contacto .contenedor-formulario .formulario form input[type="email"], .main .contacto .contenedor-formulario .formulario form textarea {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /*Banner principal*/
+  .main .banner-principal .texto-banner h1 {
+    font-size: 4rem;
+  }
+  /*Titulo secciones*/
+  .titulo-seccion h2 {
+    font-size: 2.125rem;
+  }
+  /*Proyectos*/
+  .galeria-point-break .point-breaks {
+    width: 49%;
+  }
+  /*Sección información extra*/
+  .main .info-extra .contenedor .info .contenido-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  .main .info-extra .contenedor .foto {
+    width: 100%;
+  }
+  .main .info-extra .contenedor .foto {
+    height: 30rem;
+    margin-left: 0;
+  }
+  .main .info-extra .contenedor .info .contenido-info .icono-info {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .main .info-extra .contenedor .info .contenido-info .icono-info i {
+    font-size: 3.5rem;
+  }
+  .main .info-extra .contenedor .info .contenido-info .texto-info {
+    margin-left: 0;
+  }
+  .main .info-extra .contenedor .info .contenido-info .texto-info h4 {
+    font-size: 1.175rem;
+  }
+  .main .info-extra .contenedor .info .contenido-info:first-child {
+    margin-bottom: 40px;
+  }
+  /*Contacto*/
+  .main .contacto .contenedor-formulario .formulario {
+    padding: 70px 40px;
+  }
 }
 
 /*
