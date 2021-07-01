@@ -5,10 +5,290 @@
 .main{
     width: 100%;
     margin-top: -6.8rem;
-
+    .banner-principal{
+        width: 100%;
+        position: relative;
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .texto-banner{
+            display: inline-block;
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            h1{
+                font-weight: bold;
+                color: $color-white;
+                font-size: 9.7rem;
+                line-height: 1rem;
+                margin-bottom: 3rem;
+            }
+            h2{
+                font-weight: regular;
+                color: $color-white;
+                font-size: 3.9rem;
+                line-height: 9rem;
+            }
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 0.8rem 2rem;
+                background: $color-black;
+                color: $color-white;
+                transition: all .7s ease;
+                font-size: 1.8rem;
+                border-radius: 3px;
+            }
+            a:hover{
+                background: $color-black;
+                transform: scale(1.3);
+                transition: all 0.2s ease-in;
+                color: $color-white;
+            }
+        }
+    }
 }
 
-.banner-principal{
+.texto-banner{
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+
+    80% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+// Point-break
+
+.point-break{
+    background-color: $color-white;
+    padding: 10.8rem 0 5.4rem 0;
+}
+
+.galeria-point-break{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 3.4rem;
+    border-bottom: 1px solid #ccc;
+    .point-breaks{
+        width: 32%;
+        margin-bottom: 2%;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+        }
+    }
+}
+
+// modal fotos proyectos
+
+
+// Acerca de
+
+.main .acerca-de{
+    background: $color-white;
+}
+
+.main .acerca-de .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main .acerca-de .contenedor .titulo-seccion{
+    width: 33.33%;
+    text-align: left;
+}
+
+.main .acerca-de .contenedor .titulo-seccion h2{
+    margin-bottom: 0;
+}
+
+.main .acerca-de .texto-acerca-de{
+    width: 66.66%;
+    text-align: left;
+}
+
+.main .acerca-de .texto-acerca-de p{
+    color: $color-black;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+// slider
+
+.main .contenedor-slider{
     width: 100%;
+    overflow: hidden;
+    background: $color-white;
+    padding: 54px 0;
     position: relative;
 }
+
+.main .contenedor-slider .slider{
+    width: 400%;
+    display: flex;
+}
+
+.main .contenedor-slider .slider .slide{
+    width: 15%;
+    max-width: 95rem;
+    margin-right: 0.7%;
+    box-shadow: 0px 20px 40px #aaa;
+}
+
+.main .contenedor-slider .slider .slide img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .contenedor-slider .btn-anterior, .main .contenedor-slider .btn-siguiente{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.main .contenedor-slider .btn-anterior{
+    left: 2%;
+}
+
+.main .contenedor-slider .btn-siguiente{
+    right: 2%;
+}
+
+.main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i{
+    color: #fff;
+}
+
+.main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover{
+    color: $color-black;
+    transform: scale(2);
+    transition: all .2s ease-out;
+}
+
+// map
+
+#map{
+    margin-top: 2.5rem;
+    height: 31.25rem;
+    width: 100%;
+}
+
+// Seccion info
+
+.main .info-extra{
+    background: #191919;
+    padding: 130px 0;
+  }
+  
+  .main .info-extra .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .main .info-extra .contenedor .info{
+    width: 50%;
+  }
+  
+  .main .info-extra .contenedor .info .contenido-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .main .info-extra .contenedor .info .contenido-info:first-child{
+    margin-bottom: 30px;
+  }
+  
+  .main .info-extra .contenedor .info .contenido-info .icono-info{
+    width: 5%;
+  }
+  
+  .main .info-extra .contenedor .info .contenido-info .icono-info i{
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .main .info-extra .contenedor .info .contenido-info .texto-info{
+    margin-left: 3%;
+  }
+  
+  .main .info-extra .contenedor .info .contenido-info .texto-info h4{
+    font-size: 1.875rem;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .main .info-extra .contenedor .info .contenido-info .texto-info p{
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .main .info-extra .contenedor .foto{
+    width: 50%;
+    height: 300px;
+    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
+    background-image: url('../img/info-foto.jpg');
+    background-position: center;
+    background-size: cover;
+  }

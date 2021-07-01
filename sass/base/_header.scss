@@ -3,7 +3,7 @@
 .menu-bar-pc{
     width: 100%;
     min-height: 6.8rem;
-    border-bottom: 1px solid rgba($color-black, 0.15);
+    background-color: $color-black;
     padding: 0 3.6rem;
     display: flex;
     flex-direction: row;
@@ -11,6 +11,7 @@
     align-items: center;
     position: relative;
     z-index: 100;
+    background-attachment: fixed;
 }
 
 .logo{
@@ -28,7 +29,7 @@
     padding: 0 1rem;
     color: $color-white;
     text-decoration: none;
-    font-weight: lighter;
+    font-weight: regular;
     font-size: 1.4rem;
     letter-spacing: 0;
     line-height: 1.5;
@@ -73,7 +74,9 @@
 
 .menu-principal a:hover,
 .top-redes a:hover{
-color: $color-orange;
+transform: translateY(-0.5rem);
+transition: all 0.2s ease-out;
+color: $color-white;
 }
 
 
