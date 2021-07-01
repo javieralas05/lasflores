@@ -127,6 +127,7 @@
             width: 100%;
             height: 100%;
             vertical-align: top;
+            border-radius: 3px;
         }
     }
 }
@@ -164,7 +165,8 @@
 .main .acerca-de .texto-acerca-de p{
     color: $color-black;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: lighter;
+    line-height: 1.5;
 }
 
 // slider
@@ -186,12 +188,12 @@
     width: 15%;
     max-width: 95rem;
     margin-right: 0.7%;
-    box-shadow: 0px 20px 40px #aaa;
 }
 
 .main .contenedor-slider .slider .slide img{
     width: 100%;
     vertical-align: top;
+    border-radius: 3px;
 }
 
 .main .contenedor-slider .btn-anterior, .main .contenedor-slider .btn-siguiente{
@@ -222,73 +224,202 @@
 
 // map
 
-#map{
-    margin-top: 2.5rem;
-    height: 31.25rem;
-    width: 100%;
-}
 
 // Seccion info
 
 .main .info-extra{
     background: #191919;
     padding: 130px 0;
-  }
-  
-  .main .info-extra .contenedor{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .main .info-extra .contenedor .info{
-    width: 50%;
-  }
-  
-  .main .info-extra .contenedor .info .contenido-info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  
-  .main .info-extra .contenedor .info .contenido-info:first-child{
-    margin-bottom: 30px;
-  }
-  
-  .main .info-extra .contenedor .info .contenido-info .icono-info{
-    width: 5%;
-  }
-  
-  .main .info-extra .contenedor .info .contenido-info .icono-info i{
-    font-size: 1.5rem;
-    color: #fff;
-  }
-  
-  .main .info-extra .contenedor .info .contenido-info .texto-info{
-    margin-left: 3%;
-  }
-  
-  .main .info-extra .contenedor .info .contenido-info .texto-info h4{
-    font-size: 1.875rem;
-    line-height: 24px;
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-  
-  .main .info-extra .contenedor .info .contenido-info .texto-info p{
-    color: #979797;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  
-  .main .info-extra .contenedor .foto{
-    width: 50%;
-    height: 300px;
-    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
-    background-image: url('../img/info-foto.jpg');
-    background-position: center;
+}
+
+.main .info-extra .contenedor{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.main .info-extra .contenedor .info{
+width: 45%;
+}
+
+.main .info-extra .contenedor .info .contenido-info{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+}
+
+.main .info-extra .contenedor .info .contenido-info:first-child{
+margin-bottom: 30px;
+}
+
+.main .info-extra .contenedor .info .contenido-info .icono-info{
+width: 5%;
+padding-top: 7px;
+}
+
+.main .info-extra .contenedor .info .contenido-info .icono-info i{
+font-size: 1.5rem;
+color: #fff;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info{
+margin-left: 3%;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info h4{
+font-size: 1.8rem;
+line-height: 24px;
+color: $color-white;
+font-weight: bold;
+margin-bottom: 1.5rem;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info p{
+color: $color-white;
+font-size: 1.6rem;
+font-weight: lighter;
+line-height: 1.5;
+}
+
+.main .info-extra .contenedor .foto{
+width: 50%;
+height: 30rem;
+box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.50);
+//background-image: url('/img/maps.PNG');
+margin-left: 4rem;
+
+}
+
+// Contacto
+
+.main .contacto{
+    padding: 19rem 0;
+    background-image: url('/img/2f.jpg');
     background-size: cover;
-  }
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main .contacto .contenedor-formulario{
+background: #fff;
+min-height: 48.5rem;
+border-radius: 3px;
+box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.3);
+display: flex;
+justify-content: space-between;
+}
+
+.main .contacto .contenedor-formulario .formulario{
+width: 50%;
+padding: 7rem;
+}
+
+.main .contacto .contenedor-formulario .formulario h2{
+font-size: 2.2rem;
+line-height: 24px;
+color: #0089E0;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.main .contacto .contenedor-formulario .formulario p{
+color: $color-black;
+font-size: 1rem;
+font-weight: normal;
+margin-bottom: 3rem;
+padding-left: 3px;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="text"], .main .contacto .contenedor-formulario .formulario form input[type="email"]{
+border: none;
+border-bottom: 1px solid #ccc;
+padding: 10px 0;
+outline: none;
+width: 100%;
+margin-bottom: 10px;
+color: #979797;
+font-size: 0.9rem;
+font-weight: 400;
+letter-spacing: 0.5px;
+}
+
+.main .contacto .contenedor-formulario .formulario form textarea{
+border: none;
+border-bottom: 1px solid #ccc;
+padding: 10px 0;
+outline: none;
+width: 100%;
+max-width: 100%;
+max-height: 88px;
+min-height: 88px;
+color: #979797;
+margin-bottom: 10px;
+font-size: 0.9rem;
+font-weight: 400;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 0;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="submit"]{
+width: 100%;
+border: none;
+border: 1px solid #0089E0;
+padding: 8px;
+background: #0089E0;
+color: #fff;
+font-size: 0.9rem;
+letter-spacing: 0.5px;
+cursor: pointer;
+transition: all .7s ease;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="submit"]:hover{
+background: #fff;
+color: #0089E0;
+}
+
+.main .contacto .contenedor-formulario .foto{
+width: 50%;
+background-image: url('/img/1m.jpg');
+background-size: cover;
+border-radius: 3px;
+}
+
+/* ------ PIE DE PÁGINA ------ */
+
+footer{
+    background: $color-black;
+    padding: 5.4rem 0;
+    text-align: center;
+}
+
+footer .copy{
+color: $color-white;
+font-size: 1.4rem;
+font-weight: lighter;
+margin-bottom: 1.5rem;
+}
+
+footer .footer-redes a{
+display: inline-block;
+padding: 0 10px;
+color: $color-white;
+text-decoration: none;
+font-weight: 500;
+font-size: 0.875rem;
+letter-spacing: 0;
+line-height: 1.5em;
+transition: all .3s ease;
+}
+
+footer .footer-redes a:hover{
+    transform: translateY(-0.5rem);
+    transition: all 0.2s ease-out;
+    color: $color-white;    
+}
+
+.footer-redes a i{
+    font-size: 2rem;
+}
