@@ -9,6 +9,13 @@
     <title>Las Flores</title>
 </head>
 <body>
+        <!-- Boton "Volver Arriba" -->
+        <div class="btn-volver-arriba" id="btnVolverArriba">
+        <a href="#" class="volver-arriba">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+        </div>
+
         <!-- Barra de navegación -->
         <header>
 
@@ -22,10 +29,10 @@
                 </div>
                 <nav class="menu-principal">
                     <a href="#" class="volver-arriba">HOME</a>
-                    <a href="#" class="scroll-suave">FOTOS AEREAS</a>
-                    <a href="#" class="scroll-acercaDe">ACERCA DE</a>
-                    <a href="#" class="scroll-ubicacion">GALERIA</a>
-                    <a href="#" class="scroll-suave">CONTACTO</a>
+                    <a href="#point-break" class="scroll-suave">POINT BREAK</a>
+                    <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+                    <a href="#contenidoInfo" class="scroll-ubicacion">UBICACION</a>
+                    <a href="#contacto" class="scroll-suave">CONTACTO</a>
                 </nav>
             </div>
     
@@ -36,10 +43,10 @@
                 </a>
                 <nav class="menu-principal">
                     <a href="#" class="volver-arriba">HOME</a>
-                    <a href="#" class="scroll-suave">FOTOS AEREAS</a>
-                    <a href="#" class="scroll-acercaDe">ACERCA DE</a>
-                    <a href="#" class="scroll-ubicacion">GALERIA</a>
-                    <a href="#" class="scroll-suave">CONTACTO</a>
+                    <a href="#point-break" class="scroll-suave">POINT BREAK</a>
+                    <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+                    <a href="#contenidoInfo" class="scroll-ubicacion">UBICACION</a>
+                    <a href="#contacto" class="scroll-suave">CONTACTO</a>
                 </nav>
                 <div class="top-redes">
                     <a href="https://www.linkedin.com/in/rodrigojavier-alas/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -52,14 +59,14 @@
         <!-- Barra de navegación fija -->
         <div class="fixed-header" id="fixedHeader">
             <a href="#" class="logo">
-                <img src="/icons/Group 4.png" alt="logo infoSurf">
+                <img src="/icons/Group 10.png" alt="logo infoSurf">
             </a>
             <nav class="menu-principal">
                 <a href="#" class="volver-arriba">HOME</a>
-                <a href="#" class="scroll-suave">FOTOS AEREAS</a>
-                <a href="#" class="scroll-acercaDe">ACERCA DE</a>
-                <a href="#" class="scroll-ubicacion">GALERIA</a>
-                <a href="#" class="scroll-suave">CONTACTO</a>
+                <a href="#point-break" class="scroll-suave">POINT BREAK</a>
+                <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+                <a href="#contenidoInfo" class="scroll-ubicacion">UBICACION</a>
+                <a href="#contacto" class="scroll-suave">CONTACTO</a>
     
             </nav>
             <div class="top-redes">
@@ -86,12 +93,12 @@
     <section class="main">
         <!-- Banner Principal -->
         <section class="banner-principal">
-            <div class="banner" id="banner" data-vide-bg="3.mp4"></div>
+            <div class="banner" id="banner" data-vide-bg="pointBreak.mp4"></div>
             <div class="banner2" id="banner"></div>
             <div class="texto-banner">
                 <h1 class="titulo-banner-h1">Las Flores</h1>
                 <h2>San Miguel, El Salvador</h2>
-                <a href="#" class="scroll-suave">Ver Más</a>
+                <a href="#point-break" class="scroll-suave">Ver Más</a>
             </div>
         </section>
 
@@ -164,7 +171,7 @@
 
         <!-- Ubicacion -->
 
-        <section class="info-extra">
+        <section class="info-extra" id="contenidoInfo">
             <div class="contenedor">
             <div class="info">
 
@@ -201,18 +208,21 @@
         <div class="contacto" id="contacto">
             <div class="contenedor">
                 <div class="contenedor-formulario">
-                    <div class="formulario">
+                    <div class="formulario" id="formulario">
                         <h2>Cuéntanos que mas te gustaría saber</h2>
                         <p>Escribenos para compatir tus opiones e ideas para implementar en este website</p>
                         <form>
                             <div>
-                                <input type="text" name="nombre" placeholder="Nombre">
+                                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                                <p class="error">Por favor escribe tu nombre</p>
                             </div>
                             <div>
-                                <input type="email" name="email" placeholder="Correo Electronico">
+                                <input type="email" name="email" placeholder="Correo Electronico" id="email">
+                                <p class="error">Por favor escribe tu correo</p>
                             </div>
                             <div>
-                                <textarea name="mensaje" placeholder="Cuéntanos de tu idea o opinion"></textarea>
+                                <textarea name="mensaje" placeholder="Cuéntanos de tu idea o opinion" id="mensaje"></textarea>
+                                <p class="error">Por favor escribe tu mensaje</p>
                             </div>
                             <div>
                                 <input type="submit" name="enviar" value="Enviar">
@@ -240,8 +250,16 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/jquery.vide.js"></script> 
+    <script src="/jquery.vide.js"></script>
     <script src="/js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/stickyHeader.js"></script>
+    <script src="/js/scrollSuave.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
 </body>
 </html>

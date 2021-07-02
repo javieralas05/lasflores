@@ -43,6 +43,35 @@ body {
   padding-left: 3px;
 }
 
+.btn-volver-arriba {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99999;
+  margin-right: -6rem;
+  -webkit-transition: all .4 ease;
+  transition: all .4 ease;
+}
+
+.btn-volver-arriba a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+  text-align: center;
+}
+
+.btn-volver-arriba a i {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  line-height: 4rem;
+}
+
 .menu-bar-pc {
   width: 100%;
   min-height: 6.8rem;
@@ -110,7 +139,7 @@ body {
   min-height: 6.8rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding: 0 3.6rem;
-  background-color: #FFFFFF;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,14 +156,14 @@ body {
   position: fixed;
   top: 0;
   z-index: 100;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
   margin-top: -6.8rem;
 }
 
 .fixed-header .menu-principal a,
 .fixed-header .top-redes a {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 .menu-principal a:hover,
@@ -351,6 +380,47 @@ body {
   border-radius: 3px;
 }
 
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal img {
+  width: 100%;
+  max-width: 60rem;
+}
+
+.modal .btn-cerrar {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  top: 2rem;
+  right: 2rem;
+  background: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal .btn-cerrar i {
+  color: #000000;
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
 .main .acerca-de {
   background: #FFFFFF;
 }
@@ -515,7 +585,7 @@ body {
 .main .info-extra .contenedor .info .contenido-info .texto-info p {
   color: #FFFFFF;
   font-size: 1.6rem;
-  font-weight: lighter;
+  font-weight: regular;
   line-height: 1.5;
 }
 
@@ -666,6 +736,14 @@ footer .footer-redes a:hover {
   font-size: 2rem;
 }
 
+.main .contacto .contenedor-formulario .formulario form .error {
+  display: none;
+  color: #ff8c8c;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
 /* ----- MEDIA QUERIES ----- */
 @media screen and (max-width: 1040px) {
   /*Sección información extra*/
@@ -764,12 +842,15 @@ footer .footer-redes a:hover {
 @media screen and (max-width: 550px) {
   /*Banner principal*/
   .main .banner-principal .texto-banner h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+  .main .banner-principal .texto-banner h2 {
+    font-weight: regular;
+    color: #FFFFFF;
+    font-size: 2rem;
+    line-height: 4rem;
   }
   /*Titulo secciones*/
-  .titulo-seccion h2 {
-    font-size: 2.125rem;
-  }
   /*Proyectos*/
   .galeria-point-break .point-breaks {
     width: 49%;
@@ -806,6 +887,37 @@ footer .footer-redes a:hover {
   /*Contacto*/
   .main .contacto .contenedor-formulario .formulario {
     padding: 70px 40px;
+  }
+  .titulo-seccion h2 {
+    color: #000000;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  .titulo-seccion p {
+    color: #000000;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    padding-left: 3px;
+  }
+  .main .acerca-de .texto-acerca-de p {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+  .main .contacto .contenedor-formulario .formulario h2 {
+    font-size: 2.2rem;
+    line-height: 24px;
+    color: #0089E0;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .main .contacto .contenedor-formulario .formulario p {
+    font-size: 1.5rem;
+  }
+  .main .contacto .contenedor-formulario .formulario form input[type="submit"] {
+    font-size: 1.5rem;
   }
 }
 

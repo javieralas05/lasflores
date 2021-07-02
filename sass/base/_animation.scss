@@ -100,13 +100,19 @@
 
 @media screen and (max-width:550px){
 /*Banner principal*/
-.main .banner-principal .texto-banner h1{
-    font-size: 4rem;
+.main .banner-principal .texto-banner h1 {
+    font-size: 5rem;
 }
+
+.main .banner-principal .texto-banner h2 {
+    font-weight: regular;
+    color: #FFFFFF;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
 /*Titulo secciones*/
-.titulo-seccion h2{
-    font-size: 2.125rem;
-}
+
 /*Proyectos*/
 .galeria-point-break .point-breaks {
     width: 49%;
@@ -143,5 +149,36 @@
 /*Contacto*/
 .main .contacto .contenedor-formulario .formulario{
     padding: 70px 40px;
+}
+.titulo-seccion h2 {
+    color: #000000;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.titulo-seccion p {
+    color: #000000;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    padding-left: 3px;
+}
+.main .acerca-de .texto-acerca-de p {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.main .contacto .contenedor-formulario .formulario h2 {
+    font-size: 2.2rem;
+    line-height: 24px;
+    color: #0089E0;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.main .contacto .contenedor-formulario .formulario p{
+    font-size: 1.5rem;
+}
+.main .contacto .contenedor-formulario .formulario form input[type="submit"]{
+    font-size: 1.5rem;
 }
 }
